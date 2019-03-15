@@ -24,8 +24,8 @@ export default ({ data }) => (
 )
 
 export const query = graphql`
-  query WorkQuery($slug: String!) {
-    datoCmsWork(slug: { eq: $slug }) {
+  query BlogQuery($slug: String!) {
+    datoCmsBlog(slug: { eq: $slug }) {
       seoMetaTags {
         ...GatsbyDatoCmsSeoMetaTags
       }
